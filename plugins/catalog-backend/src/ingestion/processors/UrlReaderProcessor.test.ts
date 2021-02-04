@@ -57,7 +57,7 @@ describe('UrlReaderProcessor', () => {
     )) as CatalogProcessorEntityResult;
 
     expect(generated.type).toBe('entity');
-    expect(generated.location).toBe(spec);
+    expect(generated.location).toEqual(spec);
     expect(generated.entity).toEqual({ mock: 'entity' });
   });
 
